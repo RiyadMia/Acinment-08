@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Iphone 13 pro",
+    "price": 37,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" 
+  },
+  {
+    "id": "2",
+    "name": "Iphone 13 mex",
+    "price": 37,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" 
+  },
+  {
+    "id": "3",
+    "name": "Iphone 13",
+    "price": 37,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" 
+  },
+  {
+    "id": "4",
+    "name": "Iphone 12",
+    "price": 37,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" 
+  },
+  {
+    "id": "5",
+    "name": "Iphone 11",
+    "price": 37,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1617135051000" 
+  }
+]
