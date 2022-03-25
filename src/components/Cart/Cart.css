@@ -1,5 +1,15 @@
 .cart {
-  position: sticky;
   top: 0%;
   padding: 30px;
+}
+.btn-choice {
+  border: none;
+  padding: 5px;
+  color: green;
+}
+.btn-close {
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  color: brown;
 }

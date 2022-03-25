@@ -15,8 +15,11 @@ const Cart = (props) => {
         <div className='cart'>
             <h3>Mobile Order </h3>
             <p>Selected items : {quantity} </p>
-           <h3> {name}</h3>
+            <h3> {name}</h3>
             <p>Total price : $ {total} </p>
+            <button className='btn-choice'>CHO0CE FOR 1 ME </button>
+            <br />
+            <button className='btn-close'>CHOOCE AGAIN</button>
         </div>
     );
 };

@@ -12,5 +12,6 @@
   background-color: lightgrey;
   margin-right: 20px;
   border-radius: 8px;
-  height: 250px;
+  height: 300px;
+  position: sticky;
 }
