@@ -54,7 +54,7 @@ const [cart, setCart]=useState([])
              }
          </div>
          <div className="cart-container">
-           <Cart cart={cart} handelToCart={handelToCart}></Cart>
+           <Cart cart={cart}></Cart>
              </div>   
         </div>
     );

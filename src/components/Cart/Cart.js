@@ -2,10 +2,8 @@ import React from 'react';
 import './Cart.css'
 const Cart = (props) => {  
     const {cart}=props;
-    let name=''
     let quantity=0;
     for(const product of cart){
-    name=product.name
         quantity=quantity+product.
         quantity;
     }
@@ -20,7 +18,7 @@ const Cart = (props) => {
            )}
             <button className='btn-choice'>CHO0CE FOR 1 ME </button>
             <br />
-            <button onClick={()=>props.removeCart()}   className='btn-close'>CHOOCE AGAIN</button>
+            <button onClick={()=>props.removeHandleClick()}   className='btn-close'>CHOOCE AGAIN</button>
         </div>
     );
 };
