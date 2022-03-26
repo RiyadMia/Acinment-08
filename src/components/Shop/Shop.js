@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { addToDb, getStoredCart,deleteShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../products/Product';
 import './Shop.css'
@@ -41,7 +41,10 @@ const [cart, setCart]=useState([])
         setCart(newCart)
         addToDb(selectedproduct.id)
     }
-   
+        const  removeHandleClick = () => {
+            deleteShoppingCart()
+            window.location.reload()
+        }
     return (
         <div className='shop-container'>
          <div className="products-container">
@@ -54,7 +57,7 @@ const [cart, setCart]=useState([])
              }
          </div>
          <div className="cart-container">
-           <Cart cart={cart}></Cart>
+           <Cart cart={cart} removeHandleClick={removeHandleClick}></Cart>
              </div>   
         </div>
     );
