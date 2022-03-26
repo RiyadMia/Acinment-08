@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css'
 const Cart = (props) => {
     const {cart}=props;
@@ -9,6 +9,8 @@ const Cart = (props) => {
         quantity=quantity+product.
         quantity;
     }
+    // const [cart,setCart]=useState([])
+    // 
     return (
         <div className='cart'>
             <h3>Mobile Order </h3>

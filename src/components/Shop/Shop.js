@@ -27,7 +27,6 @@ const [cart, setCart]=useState([])
        setCart(saveCart);
     },[products])
     const handelToCart=(selectedproduct)=>{
-        // cart.push(product)
         let newCart=[]
         const exists = cart.find(product=>product.id === selectedproduct.id)
         if(!exists){
