@@ -5,8 +5,6 @@ const Cart = (props) => {
     let name=''
     let quantity=0;
     for(const product of cart){
-        // console.log(cart[2].name)
-    //    n
     name=product.name
         quantity=quantity+product.
         quantity;
