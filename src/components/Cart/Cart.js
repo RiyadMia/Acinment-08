@@ -16,9 +16,9 @@ const Cart = (props) => {
                    <h4 key={items.id}>{items.name} </h4> 
                 )
            )}
-            <button onClick={()=>props.choiceHandleClick()} className='btn-choice'>CHO0CE FOR 1 ME </button>
+            <button onClick={()=>props.choiceHandleClick(props.cart)} className='btn-choice'>CHO0CE FOR ONE ME  </button>
             <br />
-            <button onClick={()=>props.removeHandleClick()}   className='btn-close'>CHOOCE AGAIN</button>
+            <button onClick={()=>props.removeHandleClick()}   className='btn-close'>Remove All</button>
         </div>
     );
 };

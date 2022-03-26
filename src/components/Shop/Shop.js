@@ -27,6 +27,7 @@ const [cart, setCart]=useState([])
        setCart(saveCart);
     },[products])
     const handelToCart=(selectedproduct)=>{
+        
         let newCart=[]
         const exists = cart.find(product=>product.id === selectedproduct.id)
         if(!exists){
@@ -41,10 +42,23 @@ const [cart, setCart]=useState([])
         setCart(newCart)
         addToDb(selectedproduct.id)
     }
+      //Choose Remove cart btn
         const  removeHandleClick = () => {
             deleteShoppingCart()
             window.location.reload()
         }
+          //Choose Random cart btn
+    const  choiceHandleClick=()=>{
+        const rendomItem =chooseOneCart()
+        const randomProduct=cart.filter((item)=> item === rendomItem)
+        setCart(randomProduct)
+    }
+        const chooseOneCart =(selectedItem)=>{    
+           const newCarts =[...cart,selectedItem]
+           newCarts.pop()
+           return newCarts[Math.floor(Math.random()*newCarts.length)]     
+        }
+      
     return (
         <div className='shop-container'>
          <div className="products-container">
@@ -57,7 +71,7 @@ const [cart, setCart]=useState([])
              }
          </div>
          <div className="cart-container">
-           <Cart cart={cart} removeHandleClick={removeHandleClick}></Cart>
+           <Cart cart={cart} removeHandleClick={removeHandleClick} choiceHandleClick={choiceHandleClick}></Cart>
              </div>   
         </div>
     );
